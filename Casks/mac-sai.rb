@@ -1,8 +1,8 @@
 cask "mac-sai" do
-  version "1.16.0"
+  version "1.16.2"
   # Set to the published DMG's hash at release time. build-dmg.sh prints
   # "SHA256:" at the end; the release workflow fills this in automatically.
-  sha256 "3df818af1da92a119aaf1bbe29f7702fd871b8f239708230b78ac768d5a57499"
+  sha256 "dfda066e8c7f047e502f419d0bd5b13332a2212e9f263ddaa55901dc8a9d3f8c"
 
   url "https://github.com/iliyami/MacSai/releases/download/v#{version}/MacSai-#{version}.dmg",
       verified: "github.com/iliyami/MacSai/"
