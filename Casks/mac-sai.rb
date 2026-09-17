@@ -1,11 +1,13 @@
 cask "mac-sai" do
-  version "1.19.0"
+  version "1.20.0"
   # Set to the published DMG's hash at release time. build-dmg.sh prints
   # "SHA256:" at the end; the release workflow fills this in automatically.
-  sha256 "cbd07f43b17950c853656116c3f8fbab606ac78f40fd76e22fe5ba2eae227d56"
+  sha256 "8ea74e21f25a30ad6477389c17e247bc9884dcc358155df295e67fd73fc1351b"
 
-  url "https://github.com/iliyami/MacSai/releases/download/v#{version}/MacSai-#{version}.dmg",
-      verified: "github.com/iliyami/MacSai/"
+  # Homebrew dropped the optional URL hostname check (Homebrew/brew#23280);
+  # keeping it only produced a brew-update warning (issue #147). url and
+  # homepage already share github.com/iliyami/MacSai.
+  url "https://github.com/iliyami/MacSai/releases/download/v#{version}/MacSai-#{version}.dmg"
   name "Mac Sai"
   desc "Open-source Mac cleaner, optimizer, and malware scanner"
   homepage "https://github.com/iliyami/MacSai"
