@@ -1,8 +1,8 @@
 cask "mac-sai" do
-  version "1.20.0"
+  version "1.21.0"
   # Set to the published DMG's hash at release time. build-dmg.sh prints
   # "SHA256:" at the end; the release workflow fills this in automatically.
-  sha256 "8ea74e21f25a30ad6477389c17e247bc9884dcc358155df295e67fd73fc1351b"
+  sha256 "a50280a366db8e8104ece2aeb696e2a3fd89110a8bb1e5cbf26368e0fc2ef3f3"
 
   # Homebrew dropped the optional URL hostname check (Homebrew/brew#23280);
   # keeping it only produced a brew-update warning (issue #147). url and
